@@ -13,15 +13,13 @@
 // }
 
 
-
-
 const txtInput = document.querySelector(".content input");
 const checkBtn = document.querySelector(".content button");
 const outputTxt = document.querySelector(".output-txt");
 let filterInput;
 
 txtInput.addEventListener("keyup", () => {
-    filterInput = txtInput.value.toLowerCase().replace(/[^A-Z0-9]/ig, ""); //removes anything that is NOT alpha numeric and a hyphen. So allowed are A-Z 0-9 and -
+    filterInput = txtInput.value.toLowerCase().replace(/[^A-Z0-9]/ig, ""); 
     if(filterInput) {
         return checkBtn.classList.add("active");
     }
